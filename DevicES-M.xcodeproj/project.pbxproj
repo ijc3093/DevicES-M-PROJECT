@@ -13,6 +13,17 @@
 		592D320724503BCE006E05AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592D320524503BCE006E05AF /* Main.storyboard */; };
 		592D320924503BD1006E05AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 592D320824503BD1006E05AF /* Assets.xcassets */; };
 		592D320C24503BD1006E05AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 592D320A24503BD1006E05AF /* LaunchScreen.storyboard */; };
+		592D32172450420D006E05AF /* AppleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D32162450420D006E05AF /* AppleController.swift */; };
+		592D3219245042F4006E05AF /* AppleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D3218245042F4006E05AF /* AppleTableViewController.swift */; };
+		592D321F245046B5006E05AF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D321E245046B5006E05AF /* Product.swift */; };
+		592D322124504753006E05AF /* Product_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D322024504753006E05AF /* Product_Data.swift */; };
+		592D322324504973006E05AF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D322224504973006E05AF /* Models.swift */; };
+		592D322524504A4C006E05AF /* ExtensionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D322424504A4C006E05AF /* ExtensionTableViewController.swift */; };
+		592D322724504BF4006E05AF /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D322624504BF4006E05AF /* CategoryTableViewController.swift */; };
+		592D322B24504DA1006E05AF /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D322A24504DA1006E05AF /* OrderTableViewController.swift */; };
+		592D322D24504EFC006E05AF /* AddToOrderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D322C24504EFC006E05AF /* AddToOrderDelegate.swift */; };
+		592D322F24504F53006E05AF /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D322E24504F53006E05AF /* OrderConfirmationViewController.swift */; };
+		592D32372450DC75006E05AF /* AppleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 592D32362450DC75006E05AF /* AppleDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +35,17 @@
 		592D320824503BD1006E05AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		592D320B24503BD1006E05AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		592D320D24503BD1006E05AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		592D32162450420D006E05AF /* AppleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleController.swift; sourceTree = "<group>"; };
+		592D3218245042F4006E05AF /* AppleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTableViewController.swift; sourceTree = "<group>"; };
+		592D321E245046B5006E05AF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		592D322024504753006E05AF /* Product_Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product_Data.swift; sourceTree = "<group>"; };
+		592D322224504973006E05AF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		592D322424504A4C006E05AF /* ExtensionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTableViewController.swift; sourceTree = "<group>"; };
+		592D322624504BF4006E05AF /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		592D322A24504DA1006E05AF /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+		592D322C24504EFC006E05AF /* AddToOrderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToOrderDelegate.swift; sourceTree = "<group>"; };
+		592D322E24504F53006E05AF /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
+		592D32362450DC75006E05AF /* AppleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,8 @@
 		592D31FE24503BCE006E05AF /* DevicES-M */ = {
 			isa = PBXGroup;
 			children = (
+				592D321424503FD1006E05AF /* Menu */,
+				592D321324503FBC006E05AF /* Order */,
 				592D31FF24503BCE006E05AF /* AppDelegate.swift */,
 				592D320124503BCE006E05AF /* SceneDelegate.swift */,
 				592D320324503BCE006E05AF /* ViewController.swift */,
@@ -65,6 +89,39 @@
 				592D320D24503BD1006E05AF /* Info.plist */,
 			);
 			path = "DevicES-M";
+			sourceTree = "<group>";
+		};
+		592D321324503FBC006E05AF /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				592D322A24504DA1006E05AF /* OrderTableViewController.swift */,
+				592D322C24504EFC006E05AF /* AddToOrderDelegate.swift */,
+				592D322E24504F53006E05AF /* OrderConfirmationViewController.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		592D321424503FD1006E05AF /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				592D321524503FE7006E05AF /* Model */,
+				592D32162450420D006E05AF /* AppleController.swift */,
+				592D3218245042F4006E05AF /* AppleTableViewController.swift */,
+				592D322424504A4C006E05AF /* ExtensionTableViewController.swift */,
+				592D322624504BF4006E05AF /* CategoryTableViewController.swift */,
+				592D32362450DC75006E05AF /* AppleDetailViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		592D321524503FE7006E05AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				592D321E245046B5006E05AF /* Product.swift */,
+				592D322024504753006E05AF /* Product_Data.swift */,
+				592D322224504973006E05AF /* Models.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +196,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				592D320424503BCE006E05AF /* ViewController.swift in Sources */,
+				592D322524504A4C006E05AF /* ExtensionTableViewController.swift in Sources */,
 				592D320024503BCE006E05AF /* AppDelegate.swift in Sources */,
+				592D322F24504F53006E05AF /* OrderConfirmationViewController.swift in Sources */,
+				592D32372450DC75006E05AF /* AppleDetailViewController.swift in Sources */,
+				592D322B24504DA1006E05AF /* OrderTableViewController.swift in Sources */,
+				592D322D24504EFC006E05AF /* AddToOrderDelegate.swift in Sources */,
+				592D322724504BF4006E05AF /* CategoryTableViewController.swift in Sources */,
+				592D32172450420D006E05AF /* AppleController.swift in Sources */,
+				592D3219245042F4006E05AF /* AppleTableViewController.swift in Sources */,
 				592D320224503BCE006E05AF /* SceneDelegate.swift in Sources */,
+				592D322324504973006E05AF /* Models.swift in Sources */,
+				592D321F245046B5006E05AF /* Product.swift in Sources */,
+				592D322124504753006E05AF /* Product_Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
