@@ -23,48 +23,48 @@ struct Product_Data {
         Product(
             id: 1,
             name: "iPhone1",
-            description: "Seasoned meatballs on top of freshly-made spaghetti. Served with a robust tomato sauce.",
-            price: 9,
+            description: "Item Is In Great Cosmetic Condition (4 Out Of 5)",
+            price: 559,
             category: "entrees",
             imageURL: URL(fileURLWithPath: "iPhone1")
         ),
         Product(
             id: 2,
             name: "iPad1",
-            description: "Tomato sauce, fresh mozzarella, basil, and extra-virgin olive oil.",
-            price: 10,
+            description: "A brand-new, unused, unopened, undamaged item in its original packaging.",
+            price: 745,
             category: "entrees",
             imageURL: URL(fileURLWithPath: "iPad1")
         ),
         Product(
             id: 3,
             name: "Retina1",
-            description: "Pacific steelhead trout with lettuce, tomato, and red onion.",
-            price: 9,
+            description: "GREAT CONDITION. Industry leading technicians, warranty and support. This earlier model year Macbook",
+            price: 1200,
             category: "entrees",
             imageURL: URL(fileURLWithPath: "Retina1")
         ),
         Product(
             id: 4,
             name: "iMac1",
-            description: "Stewed sliced beef with yellow onions and garlic in a vinegar-soy sauce. Served with steamed jasmine rice and sautÃ©ed vegetables.",
-            price: 9,
+            description: "A brand-new, unused, unopened, undamaged item in its original packaging (where packaging is applicable)",
+            price: 899,
             category: "entrees",
             imageURL: URL(fileURLWithPath: "iMac1")
         ),
         Product(
             id: 5,
             name: "iPad4",
-            description: "Delicious chicken simmered alongside yellow onions, carrots, celery, and bay leaves, chicken stock.",
-            price: 3,
+            description: "A brand-new, unused, unopened, undamaged item in its original packaging.",
+            price: 599,
             category: "entrees",
             imageURL: URL(fileURLWithPath: "iPad4")
         ),
         Product(
             id: 6,
-            name: "Italian Salad",
-            description: "Garlic, red onions, tomatoes, mushrooms, and olives on top of romaine lettuce.",
-            price: 5,
+            name: "Microsoft Surface Pro X 13",
+            description: "This Certified Refurbished product is tested and certified to look and work like new.",
+            price: 1250,
             category: "appetizers",
             imageURL: URL(fileURLWithPath: "Retina6")
         ),
