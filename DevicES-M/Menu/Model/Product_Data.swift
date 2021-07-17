@@ -6,9 +6,10 @@
 //  Copyright © 2020 Ikemefuna Chukwunyerenwa. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// Used to provide local data for debug purposes
+let myImage = "iPhone1.png"
 struct Product_Data {
     /// Use local data instead of remote server
     static let isLocal = true
@@ -26,7 +27,7 @@ struct Product_Data {
             description: "Item Is In Great Cosmetic Condition (4 Out Of 5)",
             price: 559,
             category: "entrees",
-            imageURL: URL(fileURLWithPath: "iPhone1")
+            imageURL: UIImage(named: "iPhone1")!
         ),
         Product(
             id: 2,
@@ -34,7 +35,7 @@ struct Product_Data {
             description: "A brand-new, unused, unopened, undamaged item in its original packaging.",
             price: 745,
             category: "entrees",
-            imageURL: URL(fileURLWithPath: "iPad1")
+            imageURL: UIImage(named: "iPad1")!
         ),
         Product(
             id: 3,
@@ -42,7 +43,7 @@ struct Product_Data {
             description: "GREAT CONDITION. Industry leading technicians, warranty and support. This earlier model year Macbook",
             price: 1200,
             category: "entrees",
-            imageURL: URL(fileURLWithPath: "Retina1")
+            imageURL: UIImage(named: "Retina1")!
         ),
         Product(
             id: 4,
@@ -50,7 +51,7 @@ struct Product_Data {
             description: "A brand-new, unused, unopened, undamaged item in its original packaging (where packaging is applicable)",
             price: 899,
             category: "entrees",
-            imageURL: URL(fileURLWithPath: "iMac1")
+            imageURL: UIImage(named: "iMac1")!
         ),
         Product(
             id: 5,
@@ -58,7 +59,7 @@ struct Product_Data {
             description: "A brand-new, unused, unopened, undamaged item in its original packaging.",
             price: 599,
             category: "entrees",
-            imageURL: URL(fileURLWithPath: "iPad4")
+            imageURL: UIImage(named: "iPad4")!
         ),
         Product(
             id: 6,
@@ -66,7 +67,7 @@ struct Product_Data {
             description: "This Certified Refurbished product is tested and certified to look and work like new.",
             price: 1250,
             category: "appetizers",
-            imageURL: URL(fileURLWithPath: "Retina6")
+            imageURL: UIImage(named: "Retina6")!
         ),
     ]
 }

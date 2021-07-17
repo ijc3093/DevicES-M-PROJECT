@@ -40,6 +40,8 @@ class CategoryTableViewController: UITableViewController {
                 self.updateUI(with: self.categories)
             }
         }
+        
+        
     }
     
     /// Update the categories table
@@ -100,66 +102,13 @@ class CategoryTableViewController: UITableViewController {
         }) else { return }
         
         // fetch the image from the server
-        AppleController.shared.fetchImage(url: menuItem.imageURL) { image in
-            // check that the image was fetched successfully
-            guard let image = image else { return }
-            
-            // return to main thread after the network request in background
-            DispatchQueue.main.async {
-                // get the current index path
-                guard let currentIndexPath = self.tableView.indexPath(for: cell) else { return }
-                
-                // check if the cell was not yet recycled
-                guard currentIndexPath == indexPath else { return }
-                
-                // set the thumbnail image
-                cell.imageView?.image = image
-                
-                // fit the image to the cell
-                self.fitImage(in: cell)
-            }
-        }
+        cell.imageView?.image = menuItem.imageURL
     }
     
     // adjust the cell height to make images look better
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
 
     // MARK: - Navigation
 

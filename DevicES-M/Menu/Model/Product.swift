@@ -6,16 +6,16 @@
 //  Copyright © 2020 Ikemefuna Chukwunyerenwa. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // Properties correspond to the keys listed in the API
-struct Product: Codable {
+struct Product {
     var id: Int
     var name: String
     var description: String
     var price: Double
     var category: String
-    var imageURL: URL
+    var imageURL: UIImage
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -23,12 +23,12 @@ struct Product: Codable {
         case description
         case price
         case category
-        case imageURL = "image_url"
+        case imageURL
     }
 }
 
 // The top key returned by API is called items
-struct MenuItems: Codable {
+struct MenuItems {
     let items: [Product]
 }
 

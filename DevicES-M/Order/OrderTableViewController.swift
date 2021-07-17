@@ -139,25 +139,7 @@ class OrderTableViewController: UITableViewController, AddToOrderDelegate {
         cell.detailTextLabel?.text = String(format: "$%.2f", menuItem.price)
         
         // fetch the image from the server
-        AppleController.shared.fetchImage(url: menuItem.imageURL) { image in
-            // check that the image was fetched successfully
-            guard let image = image else { return }
-            
-            // return to main thread after the network request in background
-            DispatchQueue.main.async {
-                // get the current index path
-                guard let currentIndexPath = self.tableView.indexPath(for: cell) else { return }
-                
-                // check if the cell was not yet recycled
-                guard currentIndexPath == indexPath else { return }
-                
-                // set the thumbnail image
-                cell.imageView?.image = image
-                
-                // fit the image to the cell
-                self.fitImage(in: cell)
-            }
-        }
+        cell.imageView?.image = menuItem.imageURL
     }
     
     // adjust the cell height to make images look better
@@ -190,20 +172,7 @@ class OrderTableViewController: UITableViewController, AddToOrderDelegate {
         fitDetailLabel(in: cell)
     }
 
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
+   
 
     // MARK: - Navigation
 

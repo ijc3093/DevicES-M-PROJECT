@@ -67,16 +67,7 @@ class AppleDetailViewController: UIViewController {
             // make button's corners round
             addToOrderButton.layer.cornerRadius = 5
 
-            // get the image for the menu item
-            AppleController.shared.fetchImage(url: menuItem.imageURL) { image in
-                // check that we got the image loaded
-                guard let image = image else { return }
-
-                // assign the image to the image view in the main thread
-                DispatchQueue.main.async {
-                    self.imageView.image = image
-                }
-            }
+            imageView.image = menuItem.imageURL
         }
         
         /// Set the delegate so that the selected item passed to order later
